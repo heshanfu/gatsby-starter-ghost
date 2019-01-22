@@ -532,11 +532,12 @@ h6 {
 
 .content {
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.88rem;
     line-height: 1.7em;
 }
 
 .content-body {
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     font-family: var(--font-serif);
@@ -577,7 +578,7 @@ h6 {
 
 .content-title {
     margin: 0 0 0.8em;
-    font-size: 5rem;
+    font-size: 3.6rem;
 }
 @media (max-width: 500px) {
     .content-title {
