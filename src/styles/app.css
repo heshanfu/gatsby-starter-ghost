@@ -654,9 +654,9 @@ h6 {
     line-height: 1.4em;
     white-space: pre-wrap;
     padding: 20px;
-    background: var(--color-base);
-    color: #fff;
-    border-radius: 12px;
+    background: #FAFAFA;
+    border: 1px solid rgba(0,0,0,.035);
+    border-radius: 5px;
 }
 
 /* Header
