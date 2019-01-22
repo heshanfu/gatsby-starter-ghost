@@ -36,23 +36,14 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 {/* The main header section on top of the screen */}
                 <header className="site-head">
                     <div className="container">
-                        <div className="site-mast">
-                            <div className="site-mast-left">
-                                <Link to="/">
+                   
+                        <nav className="site-nav">
+        <Link to="/">
                                     {site.logo ?
                                         <img className="site-logo" src={site.logo} alt={site.title} />
                                         : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                     }
                                 </Link>
-                            </div>
-                            <div className="site-mast-right">
-                                { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
-                                { site.facebook && <a href={ facebookUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Twitter" /></a>}
-                                <a className="site-nav-item" href={ `https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="Twitter" /></a>
-                            </div>
-                        </div>
-
-                        <nav className="site-nav">
                             <div className="site-nav-left">
                                 {/* The navigation items as setup in Ghost */}
                                 <Navigation data={site.navigation} navClass="site-nav-item" />
