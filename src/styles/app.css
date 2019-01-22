@@ -527,7 +527,7 @@ h6 {
 .container {
     max-width: 1120px;
     margin: 0 auto;
-    padding: 0 4vw;
+    padding: 0 2vw;
 }
 
 .content {
@@ -787,6 +787,7 @@ h6 {
 }
 
 .post-card {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);
     color: inherit;
     text-decoration: none;
 }
@@ -800,17 +801,19 @@ h6 {
     font-size: 1.4rem;
     line-height: 1.15em;
     color: var(--color-secondary);
+    padding: 0 10px 0 10px;
 }
 
 
 .post-card-title {
     margin: 0 0 10px 0;
-    padding: 0;
+padding: 0 10px 0 10px;
 }
 
 .post-card-excerpt {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1.55em;
+    padding: 10px;
 }
 
 .post-card-image {
