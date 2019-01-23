@@ -466,33 +466,33 @@ h6 {
 
 h1 {
     margin: 0 0 0.5em 0;
-    font-size: 4rem;
+    font-size: 2.6rem;
     font-weight: 700;
 }
 @media (max-width: 500px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
 
 h2 {
     margin: 1.5em 0 0.5em 0;
-    font-size: 1.88rem;
+    font-size: 1.7rem;
 }
 @media (max-width: 500px) {
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 }
 
 h3 {
     margin: 1.5em 0 0.5em 0;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 500;
 }
 @media (max-width: 500px) {
     h3 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -532,7 +532,7 @@ h6 {
 
 .content {
     margin: 0 auto;
-    font-size: 1.88rem;
+    font-size: 1.75rem;
     line-height: 1.7em;
 }
 
@@ -549,11 +549,8 @@ h6 {
     background: #fff;
 }
 
-.post-feature-image img {
-    margin: 0 0 3vw;
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+.post-full-content img{
+   text-align: center; 
 }
 
 .content-body h1,
@@ -567,18 +564,19 @@ h6 {
 
 .content-body h1 {
     margin: 1.0em 0 0.5em 0;
-    font-size: 3.4rem;
+    font-size: 2.8rem;
     font-weight: 700;
 }
 @media (max-width: 500px) {
     .content-body h1 {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 }
 
 .content-title {
     margin: 0 0 0.8em;
-    font-size: 3.6rem;
+    font-size: 3.1rem;
+    text-align: center;
 }
 @media (max-width: 500px) {
     .content-title {
@@ -592,34 +590,34 @@ h6 {
 
 .content-body h2 {
     margin: 0.8em 0 0.4em 0;
-    font-size: 3.2rem;
+    font-size: 2.6rem;
     font-weight: 700;
 }
 @media (max-width: 500px) {
     .content-body h2 {
-        font-size: 2.6rem;
+        font-size: 2.2rem;
     }
 }
 
 .content-body h3 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 700;
 }
 @media (max-width: 500px) {
     .content-body h3 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 }
 
 .content-body h4 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     font-weight: 700;
 }
 @media (max-width: 500px) {
     .content-body h4 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -631,7 +629,7 @@ h6 {
     font-family: Georgia,serif;
     color: var(--color-primary);
     font-style: italic;
-    font-size: 3.2rem;
+    font-size: 2.0rem;
     line-height: 1.35em;
     text-align: center;
 }
@@ -812,7 +810,7 @@ padding: 0 10px 0 10px;
 }
 
 .post-card-excerpt {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     line-height: 1.55em;
     padding: 10px;
 }
