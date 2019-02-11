@@ -34,16 +34,23 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
             <div className="viewport-top">
                 {/* The main header section on top of the screen */}
-                <header className="site-head">
-                    <div className="container">
-                   
-                        <nav className="site-nav">
-        <Link to="/">
+<header class="short">
+	<div class="nav-bar wrapper wrapper-large">
+	<a id="open-nav" href="#">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			<path d="M3 18h18v-2h-18v2zm0-5h18v-2h-18v2zm0-7v2h18v-2h-18z" fill="#eee"></path>
+		</svg>
+
+</a>
+	<div class="logo">
+	   <Link to="/">
                                     {site.logo ?
                                         <img className="site-logo" src={site.logo} alt={site.title} />
                                         : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                     }
                                 </Link>
+<nav className="site-nav">
+     
                             <div className="site-nav-left">
                                 {/* The navigation items as setup in Ghost */}
                                 <Navigation data={site.navigation} navClass="site-nav-item" />
@@ -52,8 +59,12 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 <Link className="site-nav-button" to="/about">About</Link>
                             </div>
                         </nav>
-                    </div>
-                </header>
+
+</div>
+
+	
+</header>
+
 
                 <main className="site-main">
                     {/* All the main content gets inserted here, index.js, post.js */}
