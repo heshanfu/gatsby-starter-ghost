@@ -36,12 +36,6 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 {/* The main header section on top of the screen */}
 <header class="short">
 	<div class="nav-bar wrapper wrapper-large">
-	<a id="open-nav" href="#">
-		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-			<path d="M3 18h18v-2h-18v2zm0-5h18v-2h-18v2zm0-7v2h18v-2h-18z" fill="#eee"></path>
-		</svg>
-
-</a>
 	<div class="logo">
 	   <Link to="/">
                                     {site.logo ?
