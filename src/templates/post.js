@@ -26,6 +26,7 @@ const Post = ({ data, location }) => {
                         <article className="content">
                            <section className="post-full-content">
                                 <h1 className="content-title">{post.title}</h1>
+        {post.frontmatter.date}
     { post.feature_image ?
                               
                                     <img src={ post.feature_image } alt={ post.title } />
