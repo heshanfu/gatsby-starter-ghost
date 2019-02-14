@@ -35,30 +35,28 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             <div className="viewport-top">
                 {/* The main header section on top of the screen */}
         
- <header class="cd-auto-hide-header">
-	<div class="logo"> <Link to="/">
+   <header className="site-head">
+                    <div className="container">
+                        <div className="site-mast">
+                            <div className="site-mast-left">
+                                <Link to="/">
                                     {site.logo ?
                                         <img className="site-logo" src={site.logo} alt={site.title} />
                                         : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                     }
-                                </Link></div>
+                                </Link>
+                            </div>
 
-	<nav class="cd-primary-nav">
-		<a href="#cd-navigation" class="nav-trigger">
-			<span>
-				<em aria-hidden="true"></em>
-				Menu
-			</span>
-		</a> <!-- .nav-trigger -->
+                        </div>
 
-		<ul id="cd-navigation">
-		 {/* The navigation items as setup in Ghost */}
-                                
-			<li><Navigation data={site.navigation} navClass="site-nav-item" /></li>
-
-		</ul>
-	</nav> <!-- .cd-primary-nav -->
-</header> <!-- .cd-auto-hide-header -->
+                        <nav className="site-nav">
+                            <div className="site-nav-left">
+                                {/* The navigation items as setup in Ghost */}
+                                <Navigation data={site.navigation} navClass="site-nav-item" />
+                            </div>
+                        </nav>
+                    </div>
+                </header>
 
 
                 <main className="site-main">
