@@ -43,11 +43,11 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             <div className="site-nav-left">
   <Link to="/">
                                     {site.logo ?
-                                        <img className="site-logo" src={site.logo} alt={site.title} />
+                                        <img className="site-logo" src=/favicon.png alt={site.title} />
                                         : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                     }
                                 </Link>
-                                {/* The navigation items as setup in Ghost */}
+                                {/* The navigation items as setup in Ghost */}{site.title}
                                 <Navigation data={site.navigation} navClass="site-nav-item" />
                             </div>
                         </nav>
