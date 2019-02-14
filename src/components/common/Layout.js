@@ -47,7 +47,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                         : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                     }
                                 </Link>
-                                {/* The navigation items as setup in Ghost */}{site.title}
+                                {/* The navigation items as setup in Ghost */}
                                 <Navigation data={site.navigation} navClass="site-nav-item" />
                             </div>
                         </nav>
