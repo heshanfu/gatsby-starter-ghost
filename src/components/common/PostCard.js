@@ -15,7 +15,7 @@ const PostCard = ({ post }) => {
                     <div className="post-card-image" style={{
                         backgroundImage: `url(${post.feature_image})` ,
                     }}></div>}
-                {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={true} /></div>}
+                {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={false} /></div>}
                <div>{readingTime}</div>
                 {post.featured && <span>Featured</span>}
                 <h2 className="post-card-title">{post.title}</h2>
