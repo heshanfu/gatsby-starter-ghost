@@ -16,6 +16,7 @@ const PostCard = ({ post }) => {
                         backgroundImage: `url(${post.feature_image})` ,
                     }}></div>}
                 {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={true} /></div>}
+                <time dateTime={post.published_at}>{post.published_at_pretty}</time>
                 {post.featured && <span>Featured</span>}
                 <h2 className="post-card-title">{post.title}</h2>
             </header>
