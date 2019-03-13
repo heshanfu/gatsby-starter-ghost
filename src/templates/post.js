@@ -26,7 +26,7 @@ const Post = ({ data, location }) => {
                         <article className="content">
                            <section className="post-full-content">
                                 <h1 className="content-title">{post.title}</h1>
-        <time dateTime={post.published_at}>{post.published_at_pretty}</time>
+        <div><time dateTime={post.published_at}>{post.published_at_pretty}</time></div>
     { post.feature_image ?
                               
                                     <img src={ post.feature_image } alt={ post.title } />
